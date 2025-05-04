@@ -17,6 +17,22 @@ To write a Python program that checks whether a given number is a **palindrome**
 
 ## 🧾 Program
 Add code Here
-## Output
+```
+# Step 1: Get input from the user and assign it to a variable num
+num = int(input("Enter a number: "))
 
-## Result
+# Step 2: Assign the value of num to a temporary variable temp
+temp = num
+
+# Step 3: Initialize a variable rev to 0 (used to store the reversed number)
+rev = 0
+
+# Step 4: Use a while loop to reverse the digits
+while temp > 0
+```
+## Output
+```
+121 is a palindrome.
+```
+## Result 
+This program successfully checks if the given number is a palindrome using loops!

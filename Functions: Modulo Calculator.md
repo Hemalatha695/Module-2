@@ -22,10 +22,9 @@ print("The result of the modulo operation is:", result(a, b))
 **
 ```
 ## Output
-```
 ![WhatsApp Image 2025-05-15 at 09 45 39_fd17d5ce](https://github.com/user-attachments/assets/69121925-9ee5-4da8-ae00-5450ea1e72d7)
 
-```
+
 
 ## Result
 This program successfully calculates and prints the modulo of two numbers based on user input.

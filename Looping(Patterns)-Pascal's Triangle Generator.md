@@ -29,35 +29,26 @@ To write a Python program that generates **Pascal's Triangle** using numbers. Th
 ## 🧪 Program
 Add Code Here
 ```
-import math
+rows = int(input())
+coef = 1
 
-# Step 2: Input the number of rows from the user
-rows = int(input("Enter the number of rows for Pascal's Triangle: "))
-
-# Step 3: Loop through each row to generate Pascal's Triangle
-for n in range(rows):
-    # Step 4: Print spaces to shape the triangle
-    print(" " * (rows - n - 1), end="")
-
-    # Step 4: Compute and print the values for the current row
-    for k in range(n + 1):
-        # Compute C(n, k) using factorial formula
-        value = math.comb(n, k)  # math.comb(n, k) is more efficient and cleaner
-        print(value, end=" ")
-
-    # Move to the next line after each row
+for i in range(1, rows+1):
+    for space in range(1, rows-i+1):
+        print(" ",end="")
+    for j in range(0, i):
+        if j==0 or i==0:
+            coef = 1
+        else:
+            coef = coef * (i - j)//j
+        print(coef, end = " ")
     print()
+   
 ```
 
 
-## Sample Output
-```
-    1 
-   1 1 
-  1 2 1 
- 1 3 3 1 
-1 4 6 4 1
-```
+##  Output
+
+![WhatsApp Image 2025-05-15 at 09 47 05_7477e32a](https://github.com/user-attachments/assets/f38e3e88-3c4b-4c66-b08c-655c2f913d54)
 
 ## Result
 This program successfully generates Pascal’s Triangle based on the number of rows specified by the user!

@@ -11,22 +11,18 @@ To write a Python program that defines a **lambda function** which takes two arg
 ## 🧾 Program
 Add code here
 ```
-# Step 1: Get two integer inputs from the user
-a = int(input("Enter the first number: "))
-b = int(input("Enter the second number: "))
+i=int(input())
+j=int(input())
+z=int(input())
 
-# Step 2: Define a lambda function to return the sum of a and b
-f = lambda a, b: a + b
+f = lambda a, b,c: a+b+c
 
-# Step 3: Call the function with the user inputs and print the result
-result = f(a, b)
-print(f"The sum of {a} and {b} is:", result)
+print(f(i, j,z))
 ```
 
 
 ## Output
-```
-The sum of 5 and 8 is: 13
-```
+![WhatsApp Image 2025-05-15 at 09 46 18_441b9f59](https://github.com/user-attachments/assets/2343d125-c1e7-4a27-a01d-d609d196c02e)
+
 ## Result
 This program successfully defines and uses a lambda function to compute and print the sum of two numbers based on user input.
